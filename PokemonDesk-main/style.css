@@ -1,0 +1,54 @@
+body{
+    background-image: url("../imagens/imageFundo.png");
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    gap: 10px;
+}
+
+.card-pokemon{
+    border: solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 180px;
+    height: 350px;
+
+    background-image: url("../imagens/image.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-pokemon img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+/* Estilo para os textos dentro do card */
+.card-pokemon p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pesquisa{
+    width: 500px;
+    height: 30px;
+    font-size: 15px;
+    opacity: 0.8;
+    background-image: url("../imagens/pokemonPesquisa.jpg");
+    background-size: 100% 100%;
+    color: rgb(0, 0, 0);
+}
